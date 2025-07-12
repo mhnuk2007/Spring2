@@ -8,6 +8,8 @@ import org.springframework.stereotype.Component;
 public class Alien {
     private int age;
 
+    @Autowired
+    @Qualifier("com2")
     private Computer com;
     public Alien(){
         System.out.println("alien object created");

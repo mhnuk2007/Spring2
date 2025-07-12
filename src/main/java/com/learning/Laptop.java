@@ -2,7 +2,7 @@ package com.learning;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("com2")
 public class Laptop implements Computer {
     public Laptop(){
         System.out.println("laptop object created");
