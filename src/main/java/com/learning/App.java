@@ -10,8 +10,10 @@ public class App
     public static void main( String[] args )
     {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-        Desktop dt = context.getBean(Desktop.class);
-        dt.compile();
+        Alien a = context.getBean("alien", Alien.class);
+        a.code();
+
+
 
     }
 }

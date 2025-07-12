@@ -1,7 +1,23 @@
 package com.learning;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
 public class Alien {
+    private int age;
+    @Autowired
     private Computer com;
+    public Alien(){
+        System.out.println("alien object created");
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
 
     public Computer getCom() {
         return com;
