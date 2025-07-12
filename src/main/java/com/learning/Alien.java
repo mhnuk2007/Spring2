@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Alien {
     private int age;
-    @Autowired
+
     private Computer com;
     public Alien(){
         System.out.println("alien object created");

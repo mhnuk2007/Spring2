@@ -11,6 +11,7 @@ public class App
     {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
         Alien a = context.getBean("alien", Alien.class);
+
         a.code();
 
 
